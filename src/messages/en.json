@@ -1,0 +1,119 @@
+{
+    "hello": "Hello World",
+    "HomePage": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Header": {
+        "home": "Home",
+        "products": "Products",
+        "about": "About",
+        "contact": "Contact",
+        "locations": "Locations"
+    },
+    "Hero": {
+        "title": "Qemat Alrafeat",
+        "highlight": "FOR RENT",
+        "description": "Our trusted partner in heavy equipment rental, offering effective solutions to meet the needs of industrial and construction projects in Saudi Arabia.",
+        "cta": "Our Services",
+        "contact": "Contact Us",
+        "service1": {
+            "title": "Expert Team",
+            "description": "Professional staff with years of industry experience"
+        },
+        "service2": {
+            "title": "Quality Work",
+            "description": "Committed to delivering the highest quality standards"
+        },
+        "service3": {
+            "title": "24/7 Support",
+            "description": "Round-the-clock service and maintenance support"
+        }
+    },
+    "Features": {
+        "subtitle": "Why Choose Us",
+        "title": "Our Key Features",
+        "description": "We provide comprehensive construction solutions with state-of-the-art equipment and expert professionals.",
+        "feature1": {
+            "title": "Modern Equipment",
+            "description": "Latest construction machinery and tools for efficient project completion"
+        },
+        "feature2": {
+            "title": "Safety First",
+            "description": "Strict safety protocols and certified equipment for secure operations"
+        },
+        "feature3": {
+            "title": "Time Efficient",
+            "description": "Quick response times and efficient project management"
+        },
+        "feature4": {
+            "title": "Expert Team",
+            "description": "Highly skilled professionals with extensive industry experience"
+        },
+        "feature5": {
+            "title": "Quality Assurance",
+            "description": "Rigorous quality control processes and standards"
+        },
+        "feature6": {
+            "title": "Maintenance",
+            "description": "Regular maintenance and support for all equipment"
+        }
+    },
+    "Products": {
+        "title": "Our Product Line",
+        "learnMore": "Learn More",
+        "description": "We offer a wide range of heavy equipment rentals to meet the diverse needs of construction and industrial projects in Saudi Arabia.",
+        "product1": {
+            "title": "Heavy Duty Cranes",
+            "description": "Advanced lifting solutions for major construction projects"
+        },
+        "product2": {
+            "title": "Mobile Cranes",
+            "description": "Versatile and powerful mobile lifting equipment"
+        },
+        "product3": {
+            "title": "Tower Cranes",
+            "description": "High-rise construction specialists with superior reach"
+        },
+        "product4": {
+            "title": "Special Equipment",
+            "description": "Custom solutions for unique construction challenges"
+        }
+    },
+    "Locations": {
+        "title": "Our Locations",
+        "riyadh": "Riyadh",
+        "jeddah": "Jeddah",
+        "dammam": "Dammam",
+        "description": "Find our offices and service centers across Saudi Arabia. We're here to serve you with the best equipment rental solutions.",
+        "riyadhAddress": "King Fahd Road, Olaya District, Riyadh",
+        "riyadhPhone": "+966 11 xxx xxxx",
+        "jeddahAddress": "Al Andalus District, Prince Sultan Road, Jeddah",
+        "jeddahPhone": "+966 12 xxx xxxx",
+        "dammamAddress": "King Fahd Road, Al Faisaliyah, Dammam",
+        "dammamPhone": "+966 13 xxx xxxx"
+    },
+    "Footer": {
+        "description": "In Qemat Alrafeat, we are your partners in success, and we strive to provide the equipment and solutions that help you achieve your goals with the highest levels of performance and quality.",
+        "quickLinks": "Quick Links",
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "ourServices": "Our Services",
+        "locations": "Locations",
+        "contact": "Contact Us",
+        "craneRental": "Crane Rental",
+        "forkliftRental": "Forklift Rental",
+        "generatorRental": "Generator Rental",
+        "transportationServices": "Transportation Services",
+        "technicalSupport": "Technical Support",
+        "address": "123 Construction Way, Building City, BC 12345",
+        "phone": "+1 (555) 123-4567",
+        "email": "info@xcmg.com",
+        "newsletter": "Newsletter",
+        "newsletterDesc": "Subscribe to our newsletter for the latest updates and industry news.",
+        "emailPlaceholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "rights": "All rights reserved."
+    }
+}
