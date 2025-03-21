@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import { Trash2, Recycle, FileCheck, Truck, PackageCheck, ClipboardCheck } from 'lucide-react';
+import { Trash2, Recycle, FileCheck } from 'lucide-react';
 
 export default function Features() {
   const t = useTranslations('Features');

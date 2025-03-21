@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { MapPin, Phone } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import dynamic from 'next/dynamic';
-import { LatLngExpression, Icon } from 'leaflet';
+import { LatLngExpression } from 'leaflet';
 
 // Dynamically import Leaflet components to avoid SSR issues
 const MapContainer = dynamic(
