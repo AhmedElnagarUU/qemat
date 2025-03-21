@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 // Validate that the incoming `locale` parameter is valid
 const locales = ['en', 'ar'];
 
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
   params: { locale }
 }: {

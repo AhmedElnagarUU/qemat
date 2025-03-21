@@ -79,7 +79,7 @@ export default function ParallaxExamples() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg text-white/90 mb-8">
-            Let's work together to bring your vision to life. Contact us today for a consultation.
+            Let&apos;s work together to bring your vision to life. Contact us today for a consultation.
           </p>
           <Button 
             size="lg" 

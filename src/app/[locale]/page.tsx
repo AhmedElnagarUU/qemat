@@ -6,7 +6,7 @@ import Features from '@/components/Features';
 import Footer from '@/components/Footer';
 // import CallToAction from "@/components/call-to-action";
 import Services from "@/components/services";
-import WhyChooseUs from "@/components/why-choose-us";
+// import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
 import { ParallaxSection } from "@/components/ui/parallax-section";
 export default function Home() {

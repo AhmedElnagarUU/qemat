@@ -1,11 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { MapPin, Phone } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import dynamic from 'next/dynamic';
 import { LatLngExpression } from 'leaflet';
+import L from 'leaflet';
 
 // Dynamically import Leaflet components to avoid SSR issues
 const MapContainer = dynamic(
@@ -56,23 +57,19 @@ const Locations = () => {
     }
   ];
 
+  // Fix for default marker icons
+  const icon = new L.Icon({
+    iconUrl: '/leaflet/marker-icon.png',
+    shadowUrl: '/leaflet/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
   // Fix for the missing icon issue in Leaflet when using Next.js
   useEffect(() => {
-    const L = require('leaflet');
-    
-    // Create custom icon
-    const customIcon = new L.Icon({
-      iconUrl: '/leaflet/marker-icon.png',
-      iconRetinaUrl: '/leaflet/marker-icon-2x.png',
-      shadowUrl: '/leaflet/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-
-    // Set as default icon
-    L.Marker.prototype.options.icon = customIcon;
+    L.Marker.prototype.options.icon = icon;
   }, []);
 
   return (
