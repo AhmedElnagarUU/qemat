@@ -13,7 +13,9 @@ export default function Locations() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       // Initialize the map
-      const map = L.map('map').setView([24.7136, 46.6753], 6);
+      const map = L.map('map', {
+        zoomControl: false // Disable default zoom control
+      }).setView([24.7136, 46.6753], 6);
       mapRef.current = map;
 
       // Add the tile layer
@@ -59,13 +61,13 @@ export default function Locations() {
   }, [t]);
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 relative z-0">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">{t('title')}</h2>
         <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
-       
         
-        <div id="map" className="h-[500px] rounded-lg shadow-lg"></div>
+        
+        <div id="map" className="h-[500px] rounded-lg shadow-lg relative z-0"></div>
       </div>
     </section>
   );
