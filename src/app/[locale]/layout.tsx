@@ -13,30 +13,36 @@ export const metadata: Metadata = {
   description: "Your trusted partner in heavy equipment rental in Saudi Arabia",
 }
 
-// Validate that the incoming `locale` parameter is valid
+// Define the supported locales
 const locales = ['en', 'ar'];
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params:{locale:unknown}
+  params: Promise<{ locale: string }>;
 }) {
+  // Await the params promise to extract the locale
+  const { locale } = await params;
+
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as string)) notFound();
+  if (!locales.includes(locale)) {
+    notFound();
+  }
 
   let messages;
   try {
+    // Dynamically import the locale-specific messages
     messages = (await import(`@/messages/${locale}.json`)).default;
   } catch {
-    return notFound();
+    notFound();
   }
 
   return (
-    <html lang={locale as string} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body className={`${locale === 'ar' ? 'font-arabic' : ''}`}>
-        <NextIntlClientProvider locale={locale as string} messages={messages} timeZone="Asia/Riyadh">
+        <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Riyadh">
           <div className="min-h-screen flex flex-col">
             <Navbar />
             {children}
