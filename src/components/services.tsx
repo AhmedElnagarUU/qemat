@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { images } from '@/config/images'
 import { useTranslations } from 'next-intl'
 
 export default function Services() {
@@ -9,22 +10,22 @@ export default function Services() {
 
   const services = [
     {
-      icon: '/image (1).jpg',
+      icon: images.services.cranes,
       title: t('product1.title'),
       description: t('product1.description'),
     },
     {
-      icon: '/image (2).jfif',
+      icon: images.services.forklifts,
       title: t('product2.title'),
       description: t('product2.description'),
     },
     {
-      icon: '/image (3).jfif',
+      icon: images.services.generators,
       title: t('product3.title'),
       description: t('product3.description'),
     },
     {
-      icon: '/image (4).jfif',
+      icon: images.services.transport,
       title: t('product4.title'),
       description: t('product4.description'),
     }

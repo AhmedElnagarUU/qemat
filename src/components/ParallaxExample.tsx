@@ -1,13 +1,14 @@
 'use client';
 
 import ParallaxSection from './ParallaxSection';
+import { images } from '@/config/images';
 
 export default function ParallaxExample() {
   return (
     <>
       {/* Example 1: Full-height hero section with text */}
       <ParallaxSection
-        imageUrl="/hero.png"
+        imageUrl={images.parallax.hero}
         height="h-screen"
         overlayOpacity={0.6}
         className="text-center text-white"
@@ -24,7 +25,7 @@ export default function ParallaxExample() {
 
       {/* Example 2: Mid-page section with statistics */}
       <ParallaxSection
-        imageUrl="/image (2).jfif"
+        imageUrl={images.parallax.stats}
         height="h-[400px]"
         overlayOpacity={0.7}
         className="my-20"
@@ -47,7 +48,7 @@ export default function ParallaxExample() {
 
       {/* Example 3: Call to action section */}
       <ParallaxSection
-        imageUrl="/image (3).jfif"
+        imageUrl={images.parallax.cta}
         height="h-[300px]"
         overlayOpacity={0.5}
       >

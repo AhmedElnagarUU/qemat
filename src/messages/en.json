@@ -30,6 +30,49 @@
             "description": "Round-the-clock service and maintenance support"
         }
     },
+    "Branding": {
+        "title": "Our Legacy of Excellence",
+        "subtitle": "Building trust through years of dedicated service and unmatched expertise in the construction equipment industry",
+        "stats": {
+            "experience": "Years Experience",
+            "support": "Customer Support",
+            "projects": "Projects Completed",
+            "clients": "Satisfied Clients"
+        },
+        "values": {
+            "quality": {
+                "title": "Quality Assurance",
+                "description": "We maintain the highest standards in equipment maintenance and service delivery, ensuring optimal performance and safety."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "Continuously updating our fleet with the latest technology to provide cutting-edge solutions for modern construction challenges."
+            },
+            "reliability": {
+                "title": "Reliability",
+                "description": "Our commitment to timely service and dependable equipment has made us a trusted partner in the industry."
+            }
+        }
+    },
+    "CompanyMessage": {
+        "title": "Our Vision & Mission",
+        "subtitle": "Driving progress in the construction industry through excellence and innovation",
+        "vision": {
+            "title": "Our Vision",
+            "description": "To be the leading provider of construction equipment solutions in Saudi Arabia, setting industry standards for quality and reliability."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To empower construction projects with reliable equipment solutions, exceptional service, and innovative approaches that drive success."
+        },
+        "goals": {
+            "title": "Strategic Goals",
+            "goal1": "Expand our equipment fleet with the latest technology and machinery",
+            "goal2": "Strengthen our presence across Saudi Arabia with strategic locations",
+            "goal3": "Maintain the highest standards of safety and service excellence"
+        },
+        "imageAlt": "Company Vision and Mission"
+    },
     "Features": {
         "subtitle": "Why Choose Us",
         "title": "Our Key Features",
@@ -64,24 +107,25 @@
         "learnMore": "Learn More",
         "description": "We offer a wide range of heavy equipment rentals to meet the diverse needs of construction and industrial projects in Saudi Arabia.",
         "product1": {
-            "title": "Heavy Duty Cranes",
+            "title": "Cranes (25-200 Ton)",
             "description": "Advanced lifting solutions for major construction projects"
         },
         "product2": {
-            "title": "Mobile Cranes",
+            "title": "Forklifts (3-15 Ton)",
             "description": "Versatile and powerful mobile lifting equipment"
         },
         "product3": {
-            "title": "Tower Cranes",
+            "title": "Generators (50-1000 KW)",
             "description": "High-rise construction specialists with superior reach"
         },
         "product4": {
-            "title": "Special Equipment",
+            "title": "Transportation (Truck, Trailer, etc.)",
             "description": "Custom solutions for unique construction challenges"
         }
     },
     "Locations": {
         "title": "Our Locations",
+        
         "riyadh": "Riyadh",
         "jeddah": "Jeddah",
         "dammam": "Dammam",

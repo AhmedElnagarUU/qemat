@@ -8,16 +8,20 @@ import Footer from '@/components/Footer';
 import Services from "@/components/services";
 // import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
-import ParallaxSection from "@/components/ParallaxSection";
+import CompanyMessage from "@/components/CompanyMessage";
+import Branding from "@/components/Branding";
 export default function Home() {
   return (
     <>
       <Hero />
+      <CompanyMessage />
       {/* <CallToAction /> */}
+
       <Services />
-      <ParallaxSection imageUrl={"image (3).jfif"} />
+      <Branding />
       {/* <WhyChooseUs /> */}
       <Features />
+
       {/* <Products /> */}
       <Locations />
       <Footer />

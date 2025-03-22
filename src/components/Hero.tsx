@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useTranslations } from 'next-intl'
 import ShapeDivider from './ShapeDivider'
+import { images } from '@/config/images'
 
 export default function Hero() {
   const t = useTranslations('Hero')
@@ -14,8 +15,8 @@ export default function Hero() {
       <div className="absolute h-full w-full inset-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
-          src="/hero.png"
-          alt="Heavy Equipment Rental Background"
+          src={images.hero.main}
+          alt={t('title')}
           fill
           priority
           className="object-cover brightness-[0.4]"
