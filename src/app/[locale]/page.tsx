@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import Services from "@/components/services";
 // import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
-import { ParallaxSection } from "@/components/ui/parallax-section";
+import ParallaxSection from "@/components/ParallaxSection";
 export default function Home() {
   return (
     <>

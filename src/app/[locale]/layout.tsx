@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 // Validate that the incoming `locale` parameter is valid
 const locales = ['en', 'ar'];
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params: { locale }
 }: {
@@ -29,7 +29,8 @@ export default async function RootLayout({
   let messages;
   try {
     messages = (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch {
+    
     notFound();
   }
 

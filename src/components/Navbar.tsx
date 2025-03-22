@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Logo ar={"lg:text-base text-xs"} en={"text-xs"} />
+              <Logo ar={"text-base"} en={"text-xs"} />
             </Link>
           </div>
           <div className="hidden md:block">
