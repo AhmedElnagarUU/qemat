@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 // import Services from "@/components/services";
 // import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
-import Services from "@/components/Services";
+import Services from "@/components/services";
 // import Branding from "@/components/Branding";
 // import Navbar from "@/components/Navbar";
 export default function Home() {
