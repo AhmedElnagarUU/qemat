@@ -27,9 +27,9 @@ export default function GeneratorsGallery() {
           <p className="text-gray-600 max-w-2xl mx-auto">{t('description')}</p>
         </div>
 
-        <div className="flex gap-8">
-          <GalleryGrid images={galleryImages} />
+        <div className="flex flex-col md:flex-row gap-8">
           <Features />
+          <GalleryGrid images={galleryImages} />
         </div>
       </div>
     </section>

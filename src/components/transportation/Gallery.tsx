@@ -45,7 +45,7 @@ export default function TransportationGallery() {
           <p className="text-gray-600 max-w-2xl mx-auto">{t('description')}</p>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <GalleryGrid images={galleryImages} />
           <Features />
         </div>
