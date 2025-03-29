@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef } from 'react';
-import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { images } from '@/config/images';
 
@@ -11,51 +10,53 @@ export default function Locations() {
   const mapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // Initialize the map
-      const map = L.map('map', {
-        zoomControl: false // Disable default zoom control
-      }).setView([24.7136, 46.6753], 6);
-      mapRef.current = map;
+    // Import Leaflet dynamically
+    import('leaflet').then((L) => {
+      if (typeof window !== 'undefined') {
+        // Initialize the map
+        const map = L.default.map('map', {
+          zoomControl: false // Disable default zoom control
+        }).setView([24.7136, 46.6753], 6);
+        mapRef.current = map;
 
-      // Add the tile layer
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
-      }).addTo(map);
+        // Add the tile layer
+        L.default.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
 
-      // Create custom icons
-      const createIcon = (color: string) => {
-        return L.icon({
-          iconUrl: images.locations.markers[color as keyof typeof images.locations.markers],
-          shadowUrl: images.locations.shadow,
-          iconSize: [25, 41],
-          iconAnchor: [12, 41],
-          popupAnchor: [1, -34],
-          shadowSize: [41, 41]
+        // Create custom icons
+        const createIcon = (color: string) => {
+          return L.default.icon({
+            iconUrl: images.locations.markers[color as keyof typeof images.locations.markers],
+            shadowUrl: images.locations.shadow,
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+          });
+        };
+
+        // Add markers for each location
+        const locations = [
+          { name: t('riyadh'), lat: 24.765426, lng: 46.833517, color: 'yellow' }
+        ];
+
+        locations.forEach(location => {
+          L.default.marker([location.lat, location.lng], {
+            icon: createIcon(location.color)
+          })
+            .bindPopup(location.name)
+            .addTo(map);
         });
-      };
 
-      // Add markers for each location
-  const locations = [
-       
-        { name: t('riyadh'), lat: 24.7136, lng: 46.6753, color: 'yellow' }
-      ];
-
-      locations.forEach(location => {
-        L.marker([location.lat, location.lng], {
-          icon: createIcon(location.color)
-        })
-          .bindPopup(location.name)
-          .addTo(map);
-      });
-
-      // Cleanup function
-      return () => {
-        if (mapRef.current) {
-          mapRef.current.remove();
-        }
-      };
-    }
+        // Cleanup function
+        return () => {
+          if (mapRef.current) {
+            mapRef.current.remove();
+          }
+        };
+      }
+    });
   }, [t]);
 
   return (

@@ -1,12 +1,13 @@
 "use client"
 
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import Link from "next/link"
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 import Logo from "./logo"
 
 export default function Footer() {
   const t = useTranslations('Footer')
+  const locale = useLocale();
 
   return (
     <footer id="contact" className="bg-black text-white pt-16 pb-8">
@@ -20,20 +21,6 @@ export default function Footer() {
             <p className="text-gray-400 mb-6">
               {t('description')}
             </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </Link>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -45,11 +32,7 @@ export default function Footer() {
                   {t('home')}
                 </Link>
               </li>
-              <li>
-                <Link href="#about" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                  {t('about')}
-                </Link>
-              </li>
+            
               <li>
                 <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('products')}
@@ -69,27 +52,27 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">{t('ourServices')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`${locale}/products/cranes`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('craneRental')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`${locale}/products/forklifts`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('forkliftRental')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`${locale}/products/generators`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('generatorRental')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('transportationServices')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('technicalSupport')}
                 </Link>
               </li>
@@ -125,4 +108,3 @@ export default function Footer() {
     </footer>
   )
 }
-

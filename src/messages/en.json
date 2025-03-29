@@ -110,21 +110,45 @@
         "product1": {
             "title": "Cranes (35-500 Ton)",
             "description": "Advanced lifting solutions for major construction projects",
-                "image": "/cranes.png"
+            "keyFeatures": "Key Features",
+            "features": [
+                "Capacities ranging from 35 to 500 tons",
+                "Competitive pricing",
+                "Comprehensive transportation services",
+                "Comprehensive technical support"
+            ],
+            "image": "/cranes.png"
         },
         "product2": {
             "title": "Forklifts (3-15 Ton)",
             "description": "Versatile and powerful mobile lifting equipment",
+            "keyFeatures": "Key Features",
+            "features": [
+                "Capacities ranging from 3 to 15 tons",
+                "Versatile and powerful mobile lifting equipment",
+                "Comprehensive technical support"
+            ],
             "image": "/forklift.png"
         },
         "product3": {
             "title": "Generators (50-1000 KW)",
             "description": "High-rise construction specialists with superior reach",
+            "keyFeatures": "Key Features",
+            "features": [
+                "Capacities ranging from 50 to 1000 KW",
+                "High-rise construction specialists with superior reach",
+                "Comprehensive technical support"
+            ],
             "image": "/generators.png"
         },
         "product4": {
             "title": "Transportation (Truck, Trailer, etc.)",
             "description": "Custom solutions for unique construction challenges",
+            "keyFeatures": "Key Features",
+            "features": [
+                "Custom solutions for unique construction challenges",
+                "Comprehensive technical support"
+            ],
             "image": "/transportation.png"
         }
     },
@@ -152,8 +176,8 @@
         "transportationServices": "Transportation Services",
         "technicalSupport": "Technical Support",
         "address": "123 Construction Way, Building City, BC 12345",
-        "phone": "+1 (555) 123-4567",
-        "email": "info@xcmg.com",
+        "phone": "0500401633",
+        "email": "info@qemat.com",
         "newsletter": "Newsletter",
         "newsletterDesc": "Subscribe to our newsletter for the latest updates and industry news.",
         "emailPlaceholder": "Enter your email",

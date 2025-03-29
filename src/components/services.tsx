@@ -1,110 +1,90 @@
-"use client"
+'use client';
 
-import Link from "next/link"
-import Image from "next/image"
-import { images } from '@/config/images'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
+import {images} from '@/config/images'
+import Link from 'next/link';
 
-export default function Services() {
-  const t = useTranslations('Products')
-
-  const services = [
-    {
-      icon: images.services.cranes,
-      title: t('product1.title'),
-      description: t('product1.description'),
-    },
-    {
-      icon: images.services.forklifts,
-      title: t('product2.title'),
-      description: t('product2.description'),
-    },
-    {
-      icon: images.services.generators,
-      title: t('product3.title'),
-      description: t('product3.description'),
-    },
-    {
-      icon: images.services.transport,
-      title: t('product4.title'),
-      description: t('product4.description'),
-    }
-  ]
-
-  return (
-    <section id="services" className="py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:flex-row gap-12 items-start">
-          {/* Services Grid - Left Side */}
-          <div className="w-full lg:w-2/3">
-            <div className="grid rounded-lg grid-cols-1 md:grid-cols-2 gap-6">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 border border-gray-100 hover:border-yellow-500/20 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 group"
-                >
-                  <div className="mb-6 h-48 relative rounded-lg overflow-hidden">
-                    <Image
-                      src={service.icon}
-                      alt={service.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    {service.description}
-                  </p>
-                  <Link
-                    href="#contact"
-                    className="text-yellow-500 hover:text-yellow-600 text-sm font-medium inline-flex items-center no-underline"
-                  >
-                    {t('learnMore')}
-                    <svg
-                      className="w-4 h-4 ml-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Content - Right Side */}
-          <div className="w-full lg:w-1/3 text-center lg:sticky lg:top-24">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              {t('title')}
-            </h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              {t('description')}
-            </p>
-            <Link
-              href="#contact"
-              className="bg-yellow-500 rounded-lg hover:bg-yellow-600 text-black font-medium py-4 px-8 inline-flex items-center transition-colors"
-            >
-              {t('learnMore')}
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
+interface EquipmentCard {
+  titleKey: string;
+  image: string;
+  width: number;
+  height: number;
+  href: string;
 }
 
+export default function Services() {
+  const t = useTranslations('Products');
+  const locale = useLocale();
+
+  const equipmentList: EquipmentCard[] = [
+    {
+      titleKey: t('product1.title'),
+      image: images.equipment.cranes,
+      width: 320,
+      height: 320,
+      href: `/${locale}/products/cranes`
+    },
+    {
+      titleKey: t('product2.title'), 
+      image: images.equipment.forklift,
+      width: 300,
+      height: 300,
+      href: `/${locale}/products/forklifts`
+    },
+    {
+      titleKey: t('product4.title'),
+      image: images.equipment.transportation,
+      width: 280,
+      height: 280,
+      href: `/${locale}/products/transportation`
+    },
+    {
+      titleKey: t('product3.title'),
+      image: images.equipment.generators,
+      width: 300,
+      height: 300,
+      href: `/${locale}/products/generators`
+    },
+  ];
+
+  return (
+    <div id="services" className="mt-30 max-w-screen mx-auto overflow-hidden">
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-8">
+          <h1 className="text-5xl font-bold uppercase mb-2">{t('title')}</h1>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-4"></div>
+          <p className="text-gray-600 text-xl mb-20 max-w-3xl mx-auto">
+            {t('description')}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+          {equipmentList.map((item, index) => (
+            <Link href={item.href} key={index}>
+              <div
+                className="shadow-md hover:shadow-lg transition-all duration-300 ease-in-out hover:bg-yellow-400 overflow-hidden flex flex-col w-60 h-[400px] group"
+              >
+                <div className="p-4">
+                  <h3 className="font-medium text-center mb-2">{item.titleKey}</h3>
+                </div>
+                <div className="flex-grow flex items-center justify-center px-4">
+                  <Image
+                    src={item.image}
+                    alt={item.titleKey}
+                    width={item.width}
+                    height={item.height}
+                    className="absolute transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  />
+                </div>
+                <div className="bg-yellow-400 py-2 text-center transition-colors duration-300 ease-in-out">
+                  <span className="text-sm font-medium uppercase">{t('learnMore')}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

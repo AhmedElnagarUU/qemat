@@ -3,6 +3,11 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'ar' }];
@@ -41,11 +46,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <body className={`${locale === 'ar' ? 'font-arabic' : ''}`}>
+      <body className={`${locale === 'ar' ? 'font-arabic' : ''} ${inter.className}`}>
         <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Riyadh">
           <div className="min-h-screen flex flex-col">
             <Navbar />
             {children}
+            <Footer />
+            <WhatsAppButton />
           </div>
         </NextIntlClientProvider>
       </body>

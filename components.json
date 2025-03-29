@@ -15,6 +15,10 @@
     "components": "@/components",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
+    "cranes": "@/components/cranes",
+    "generators": "@/components/generators",
+    "forklifts": "@/components/forklifts",
+    "transportation": "@/components/transportation",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
