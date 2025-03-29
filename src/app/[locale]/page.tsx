@@ -5,20 +5,23 @@ import Features from '@/components/Features';
 // import Products from '@/components/Products';
 import Footer from '@/components/Footer';
 // import CallToAction from "@/components/call-to-action";
-import Services from "@/components/services";
+// import Services from "@/components/services";
 // import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
-import CompanyMessage from "@/components/CompanyMessage";
-import Branding from "@/components/Branding";
+import Test from "@/components/Test";
+// import Branding from "@/components/Branding";
+// import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
+    {/* <Navbar /> */}
       <Hero />
-      <CompanyMessage />
+      
       {/* <CallToAction /> */}
 
-      <Services />
-      <Branding />
+      {/* <Services /> */}
+      <Test />
+      {/* <Branding /> */}
       {/* <WhyChooseUs /> */}
       <Features />
 

@@ -36,11 +36,9 @@ export default function Locations() {
       };
 
       // Add markers for each location
-      const locations = [
-        { name: t('location1.name'), lat: 24.7136, lng: 46.6753, color: 'red' },
-        { name: t('location2.name'), lat: 21.4858, lng: 39.1925, color: 'blue' },
-        { name: t('location3.name'), lat: 26.3927, lng: 50.1095, color: 'green' },
-        { name: t('location4.name'), lat: 24.7136, lng: 46.6753, color: 'yellow' }
+  const locations = [
+       
+        { name: t('riyadh'), lat: 24.7136, lng: 46.6753, color: 'yellow' }
       ];
 
       locations.forEach(location => {
@@ -64,6 +62,9 @@ export default function Locations() {
     <section className="py-20 bg-gray-50 relative z-0">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">{t('title')}</h2>
+        
+        <p className="text-center mb-6">{t('riyadhAddress')}</p>
+        <p className="text-center mb-6">{t('riyadhPhone')}</p>
         <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
         
         

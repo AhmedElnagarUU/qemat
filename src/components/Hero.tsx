@@ -35,7 +35,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="#services"
+            href="#test"
             className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-md transition-colors"
           >
             {t('cta')}

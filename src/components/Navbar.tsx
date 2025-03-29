@@ -38,7 +38,7 @@ export default function Navbar() {
 
   const navItems = [
     { href: "/", label: t('home') },
-    { href: "#about", label: t('about') },
+    // { href: "#about", label: t('about') },
     { href: "#services", label: t('products') },
     { href: "#locations", label: t('locations') },
     { href: "#contact", label: t('contact') }
@@ -46,7 +46,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`  fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-slate-900/50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >

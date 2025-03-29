@@ -2,7 +2,7 @@ export const images = {
   // Hero Section
   hero: {
     main: '/hero.png',
-    background: '/hero.png',
+    background: '/hero2.png',
   },
   
   // Features Section
@@ -39,12 +39,13 @@ export const images = {
     cta: '/image (3).jfif',
   },
   
-  // Company Section
-  company: {
-    message: 'https://www.mena-researchcenter.org/wp-content/uploads/2024/12/Detente-at-the-Gulf-Riyadhs-Foreign-Policy-Balancing-Act.jpg',
-    branding: '/company-branding.jpg',
-  },
-  
+ equipment : {
+  cranes :'/cranes 1.png',
+  forklift:'/forklift 1.png',
+  generators :'/generator 1.png',
+  transportation :'/transport 1.png'
+
+ },
   // Company Logo
   logo: '/logo.png',
 } as const;

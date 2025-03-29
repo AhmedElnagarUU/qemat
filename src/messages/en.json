@@ -105,37 +105,37 @@
     "Products": {
         "title": "Our Product Line",
         "learnMore": "Learn More",
+        "viewMore": "View More",
         "description": "We offer a wide range of heavy equipment rentals to meet the diverse needs of construction and industrial projects in Saudi Arabia.",
         "product1": {
-            "title": "Cranes (25-200 Ton)",
-            "description": "Advanced lifting solutions for major construction projects"
+            "title": "Cranes (35-500 Ton)",
+            "description": "Advanced lifting solutions for major construction projects",
+                "image": "/cranes.png"
         },
         "product2": {
             "title": "Forklifts (3-15 Ton)",
-            "description": "Versatile and powerful mobile lifting equipment"
+            "description": "Versatile and powerful mobile lifting equipment",
+            "image": "/forklift.png"
         },
         "product3": {
             "title": "Generators (50-1000 KW)",
-            "description": "High-rise construction specialists with superior reach"
+            "description": "High-rise construction specialists with superior reach",
+            "image": "/generators.png"
         },
         "product4": {
             "title": "Transportation (Truck, Trailer, etc.)",
-            "description": "Custom solutions for unique construction challenges"
+            "description": "Custom solutions for unique construction challenges",
+            "image": "/transportation.png"
         }
     },
     "Locations": {
         "title": "Our Locations",
         
         "riyadh": "Riyadh",
-        "jeddah": "Jeddah",
-        "dammam": "Dammam",
         "description": "Find our offices and service centers across Saudi Arabia. We're here to serve you with the best equipment rental solutions.",
-        "riyadhAddress": "King Fahd Road, Olaya District, Riyadh",
-        "riyadhPhone": "+966 11 xxx xxxx",
-        "jeddahAddress": "Al Andalus District, Prince Sultan Road, Jeddah",
-        "jeddahPhone": "+966 12 xxx xxxx",
-        "dammamAddress": "King Fahd Road, Al Faisaliyah, Dammam",
-        "dammamPhone": "+966 13 xxx xxxx"
+        "riyadhAddress": "Ibn Al Haitham, An Nahdah, Riyadh , Saudi Arabia",
+        "riyadhPhone": "0500401633"
+        
     },
     "Footer": {
         "description": "In Qemat Alrafeat, we are your partners in success, and we strive to provide the equipment and solutions that help you achieve your goals with the highest levels of performance and quality.",
@@ -160,4 +160,6 @@
         "subscribe": "Subscribe",
         "rights": "All rights reserved."
     }
+    
+    
 }
