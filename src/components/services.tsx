@@ -39,13 +39,13 @@ export default function Services() {
       height: 280,
       href: `/${locale}/products/transportation`
     },
-    {
-      titleKey: t('product3.title'),
-      image: images.equipment.generators,
-      width: 300,
-      height: 300,
-      href: `/${locale}/products/generators`
-    },
+    // {
+    //   titleKey: t('product3.title'),
+    //   image: images.equipment.generators,
+    //   width: 300,
+    //   height: 300,
+    //   href: `/${locale}/products/generators`
+    // },
   ];
 
   return (

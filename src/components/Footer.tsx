@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
             
               <li>
-                <Link href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/#services`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('products')}
                 </Link>
               </li>
@@ -61,21 +61,21 @@ export default function Footer() {
                   {t('forkliftRental')}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={`/${locale}/products/generators`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('generatorRental')}
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('transportationServices')}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('technicalSupport')}
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
