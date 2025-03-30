@@ -52,27 +52,27 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">{t('ourServices')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href={`${locale}/products/cranes`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/cranes`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('craneRental')}
                 </Link>
               </li>
               <li>
-                <Link href={`${locale}/products/forklifts`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/forklifts`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('forkliftRental')}
                 </Link>
               </li>
               <li>
-                <Link href={`${locale}/products/generators`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/generators`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('generatorRental')}
                 </Link>
               </li>
               <li>
-                <Link href={`${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('transportationServices')}
                 </Link>
               </li>
               <li>
-                <Link href={`${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
                   {t('technicalSupport')}
                 </Link>
               </li>
