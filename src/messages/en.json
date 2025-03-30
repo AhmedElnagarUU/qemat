@@ -158,7 +158,9 @@
         "riyadh": "Riyadh",
         "description": "Find our offices and service centers across Saudi Arabia. We're here to serve you with the best equipment rental solutions.",
         "riyadhAddress": "Ibn Al Haitham, An Nahdah, Riyadh , Saudi Arabia",
-        "riyadhPhone": "0500401633"
+         "riyadhPhone": "0500401633",
+         "riyadhAddress2": "The Pearl, Hayatain, Riyadh",
+        "riyadhPhone2": "0500401633"
         
     },
     "Footer": {

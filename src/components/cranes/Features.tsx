@@ -5,7 +5,7 @@ export default function Features() {
   const t = useTranslations('Products.product1');
 
   return (
-    <div className="w-1/2 p-8 bg-white rounded-xl shadow-lg">
+    <div className="md:w-1/2 p-8  bg-white ">
       <h3 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-8 flex items-center justify-end gap-3 text-right">
         <span className="text-yellow-400 border-b-4 border-yellow-400 pb-2">{t('keyFeatures')}</span>
       </h3>

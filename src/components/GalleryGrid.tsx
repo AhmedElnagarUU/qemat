@@ -28,7 +28,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
   };
 
   return (
-    <div className="w-1/2">
+    <div className="px-10 w-full md:w-1/2">
       <div className="grid grid-cols-12 gap-3">
         {images.map((image, index) => (
           <div 
@@ -52,17 +52,17 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
 
       {/* Lightbox */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center">
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-[101]"
           >
             <X className="w-8 h-8" />
           </button>
           
           <button
             onClick={handlePrevious}
-            className="absolute left-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute left-4 text-white hover:text-gray-300 transition-colors z-[101]"
           >
             <ChevronLeft className="w-12 h-12" />
           </button>
@@ -78,7 +78,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
 
           <button
             onClick={handleNext}
-            className="absolute right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute right-4 text-white hover:text-gray-300 transition-colors z-[101]"
           >
             <ChevronRight className="w-12 h-12" />
           </button>

@@ -38,7 +38,9 @@ export default function Locations() {
 
         // Add markers for each location
         const locations = [
-          { name: t('riyadh'), lat: 24.765426, lng: 46.833517, color: 'yellow' }
+        
+          { name: t('riyadh'), lat: 24.765426, lng: 46.833517, color: 'yellow' },
+          { name: t('riyadh'), lat: 24.778976, lng: 46.603668, color: 'yellow' },
         ];
 
         locations.forEach(location => {
@@ -65,6 +67,7 @@ export default function Locations() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">{t('title')}</h2>
         
         <p className="text-center mb-6">{t('riyadhAddress')}</p>
+        <p className="text-center mb-6">{t('riyadhAddress2')}</p>
         <p className="text-center mb-6">{t('riyadhPhone')}</p>
         <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
         
