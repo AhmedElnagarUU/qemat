@@ -3,7 +3,7 @@
 import Hero from "@/components/Hero";
 import Features from '@/components/Features';
 // import Products from '@/components/Products';
-import Footer from '@/components/Footer';
+
 // import CallToAction from "@/components/call-to-action";
 // import Services from "@/components/services";
 // import WhyChooseUs from "@/components/why-choose-us";
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* <Products /> */}
       <Locations />
-      <Footer />
+      
     </>
   )
 }
