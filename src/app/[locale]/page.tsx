@@ -9,6 +9,7 @@ import Features from '@/components/Features';
 // import WhyChooseUs from "@/components/why-choose-us";
 import Locations from "@/components/Locations";
 import Services from "@/components/services";
+import About from "@/components/about/About";
 // import Branding from "@/components/Branding";
 // import Navbar from "@/components/Navbar";
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
       <Hero />
       
       {/* <CallToAction /> */}
-
+      <About />
       <Services />
       
       {/* <Branding /> */}

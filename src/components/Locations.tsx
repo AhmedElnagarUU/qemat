@@ -37,7 +37,7 @@ export default function Locations() {
         };
 
         // Add markers for each location
-        const locations = [
+  const locations = [
         
           { name: t('riyadh'), lat: 24.765426, lng: 46.833517, color: 'yellow' },
           { name: t('riyadh'), lat: 24.778976, lng: 46.603668, color: 'yellow' },

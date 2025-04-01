@@ -14,8 +14,8 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Qemat Alrafeat | Equipment Rental Services",
-  description: "Your trusted partner in heavy equipment rental in Saudi Arabia",
+  title: "قمة الرافعات | خدمات تأجير كرينات ومعدات الثقيلة",
+  description: "قمة الرافعات لتأجير المعدات الثقيلة - تأجير كرينات، روافع شوكية، مان ليفت، سيزر ليفت، مولدات كهربائية وثقالات أتوماتيك. نقدم حلول فعالة تلبي احتياجات المشاريع الصناعية والإنشائية في المملكة العربية السعودية",
 }
 
 // Define the supported locales

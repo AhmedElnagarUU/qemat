@@ -69,11 +69,7 @@ export const images = {
     image23: '/cranes/image (23).jfif',
     image24: '/cranes/image (24).jfif',
     image25: '/cranes/image (25).jfif',
-    image26: '/cranes/image (26).jfif',
-    image27: '/cranes/image (27).jfif',
-    image28: '/cranes/image (28).jfif',
-    image29: '/cranes/image (29).jfif',
-    image30: '/cranes/image (30).jfif',
+   
   },
   forklifts : {
     image1: '/forklifts/image (1).jfif',

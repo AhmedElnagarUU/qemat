@@ -28,7 +28,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
   };
 
   return (
-    <div className="px-10 w-full md:w-1/2">
+    <div className="px-10 w-full ">
       <div className="grid grid-cols-12 gap-3">
         {images.map((image, index) => (
           <div 
