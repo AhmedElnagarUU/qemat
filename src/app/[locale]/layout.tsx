@@ -13,41 +13,51 @@ export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'ar' }];
 }
 
-export const metadata: Metadata = {
-  title: "قمة الرافعات | خدمات تأجير كرينات ومعدات الثقيلة",
-  description: "قمة الرافعات لتأجير المعدات الثقيلة - تأجير كرينات، روافع شوكية، مان ليفت، سيزر ليفت، مولدات كهربائية وثقالات أتوماتيك. نقدم حلول فعالة تلبي احتياجات المشاريع الصناعية والإنشائية في المملكة العربية السعودية",
-}
-
 // Define the supported locales
 const locales = ['en', 'ar'];
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
+  
+  // Define metadata for each language
+  const metadataByLocale: Record<string, Metadata> = {
+    en: {
+      title: "Qimat Al-Rafa'at | Crane & Heavy Equipment Rental Services",
+      description: "Qimat Al-Rafa'at offers heavy equipment rentals, including cranes, forklifts, man lifts, scissor lifts, generators, and automatic hoists. We provide effective solutions for industrial and construction projects in Saudi Arabia.",
+    },
+    ar: {
+      title: "قمة الرافعات | خدمات تأجير كرينات ومعدات الثقيلة",
+      description: "قمة الرافعات لتأجير المعدات الثقيلة - تأجير كرينات، روافع شوكية، مان ليفت، سيزر ليفت، مولدات كهربائية وثقالات أتوماتيك. نقدم حلول فعالة تلبي احتياجات المشاريع الصناعية والإنشائية في المملكة العربية السعودية.",
+    },
+  };
+
+  return metadataByLocale[locale] || metadataByLocale['ar'];
+}
 
 export default async function LocaleLayout({
   children,
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  // Await the params promise to extract the locale
-  const { locale } = await params;
-
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale)) {
+  if (!locales.includes(params.locale)) {
     notFound();
   }
 
   let messages;
   try {
     // Dynamically import the locale-specific messages
-    messages = (await import(`@/messages/${locale}.json`)).default;
+    messages = (await import(`@/messages/${params.locale}.json`)).default;
   } catch {
     notFound();
   }
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <body className={`${locale === 'ar' ? 'font-arabic' : ''} ${inter.className}`}>
-        <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Riyadh">
+    <html lang={params.locale} className="scroll-smooth">
+      <body className={`${params.locale === 'ar' ? 'font-arabic' : ''} ${inter.className}`}>
+        <NextIntlClientProvider locale={params.locale} messages={messages} timeZone="Asia/Riyadh">
           <div className="min-h-screen flex flex-col">
             <Navbar />
             {children}

@@ -2,61 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://your-domain.com/</loc>
+    <loc>https://qemat-alrafeat.com/</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/"/>
   </url>
 
   <!-- Products Pages -->
   <url>
-    <loc>https://your-domain.com/products/cranes</loc>
+    <loc>https://qemat-alrafeat.com/products/cranes</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/products/cranes"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/products/cranes"/>
   </url>
   <url>
-    <loc>https://your-domain.com/products/forklifts</loc>
+    <loc>https://qemat-alrafeat.com/products/forklifts</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/products/forklifts"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/products/forklifts"/>
   </url>
   <url>
-    <loc>https://your-domain.com/products/generators</loc>
+    <loc>https://qemat-alrafeat.com/products/generators</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/products/generators"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/products/generators"/>
   </url>
   <url>
-    <loc>https://your-domain.com/products/transportation</loc>
+    <loc>https://qemat-alrafeat.com/products/transportation</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/products/transportation"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/products/transportation"/>
   </url>
 
   <!-- Main Sections -->
   <url>
-    <loc>https://your-domain.com/about</loc>
+    <loc>https://qemat-alrafeat.com/about</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/about"/>
   </url>
   <url>
-    <loc>https://your-domain.com/services</loc>
+    <loc>https://qemat-alrafeat.com/services</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/services"/>
   </url>
   <url>
-    <loc>https://your-domain.com/contact</loc>
+    <loc>https://qemat-alrafeat.com/contact</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/contact"/>
   </url>
   <url>
-    <loc>https://your-domain.com/locations</loc>
+    <loc>https://qemat-alrafeat.com/locations</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://qemat-alrafeat.com/en/locations"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://qemat-alrafeat.com/ar/locations"/>
   </url>
 </urlset> 
