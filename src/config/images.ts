@@ -1,100 +1,96 @@
 export const images = {
   // Hero Section
   hero: {
-    main: '/hero.png',
-    background: '/hero2.png',
+    main: '/hero.webp',
+    background: '/hero2.webp',
   },
   
   // Features Section
   features: {
-    equipment: '/image (1).jfif',
-    expertise: '/image (2).jfif',
-    quality: '/image (3).jfif',
+    equipment: '/image (1).webp',
+    expertise: '/image (2).webp',
+    quality: '/image (3).webp',
   },
   
   // Services Section
   services: {
-    cranes: '/crane.jfif',
-    forklifts: '/forklifts.jfif',
-    generators: '/generators.jfif',
-    transport: '/transpotation.jfif',
+    cranes: '/crane.webp',
+    forklifts: '/forklifts.webp',
+    generators: '/generators.webp',
+    transport: '/transpotation.webp',
   },
   
   // Locations Section
   locations: {
     markers: {
-      red: '/leaflet/marker-icon-2x.png',
-      blue: '/leaflet/marker-icon-2x.png',
-      green: '/leaflet/marker-icon-2x.png',
-      yellow: '/leaflet/marker-icon-2x.png',
+      red: '/leaflet/marker-icon-2x.webp',
+      blue: '/leaflet/marker-icon-2x.webp',
+      green: '/leaflet/marker-icon-2x.webp',
+      yellow: '/leaflet/marker-icon-2x.webp',
     },
-    default: '/leaflet/marker-icon-2x.png',
-    shadow: '/leaflet/marker-shadow.png',
+    default: '/leaflet/marker-icon-2x.webp',
+    shadow: '/leaflet/marker-shadow.webp',
   },
   
-  
-  
  equipment : {
-  cranes :'/cranes 1.png',
-  forklift:'/forklift 1.png',
-  generators :'/generator 1.png',
-  transportation :'/transport 1.png'
-
+  cranes :'/cranes 1.webp',
+  forklift:'/forklift 1.webp',
+  generators :'/generator 1.webp',
+  transportation :'/transport 1.webp'
  },
 
  gallery : {
   cranes : {
-    image1: '/cranes/image (1).jfif',
-    image2: '/cranes/image (2).jfif',
-    image3: '/cranes/image (3).jfif',
-    image4: '/cranes/image (4).jfif',
-    image5: '/cranes/image (5).jfif',
-    image6: '/cranes/image (6).jfif',
-    image7: '/cranes/image (7).jfif',
-    image8: '/cranes/image (8).jfif',
-    image9: '/cranes/image (9).jfif',
-    image10: '/cranes/image (10).jfif',
-    image11: '/cranes/image (11).jfif',
-    image12: '/cranes/image (12).jfif',
-    image13: '/cranes/image (13).jfif',
-    image14: '/cranes/image (14).jfif',
-    image15: '/cranes/image (15).jfif',
-    image16: '/cranes/image (16).jfif',
-    image17: '/cranes/image (17).jfif',
-    image18: '/cranes/image (18).jfif',
-    image19: '/cranes/image (19).jfif',
-    image20: '/cranes/image (20).jfif',
-    image21: '/cranes/image (21).jfif',
-    image22: '/cranes/image (22).jfif',
-    image23: '/cranes/image (23).jfif',
-    image24: '/cranes/image (24).jfif',
-    image25: '/cranes/image (25).jfif',
-   
+    image1: '/cranes/image (1).webp',
+    image2: '/cranes/image (2).webp',
+    image3: '/cranes/image (3).webp',
+    image4: '/cranes/image (4).webp',
+    image5: '/cranes/image (5).webp',
+    image6: '/cranes/image (6).webp',
+    image7: '/cranes/image (7).webp',
+    image8: '/cranes/image (8).webp',
+    image9: '/cranes/image (9).webp',
+    image10: '/cranes/image (10).webp',
+    image11: '/cranes/image (11).webp',
+    image12: '/cranes/image (12).webp',
+    image13: '/cranes/image (13).webp',
+    image14: '/cranes/image (14).webp',
+    image15: '/cranes/image (15).webp',
+    image16: '/cranes/image (16).webp',
+    image17: '/cranes/image (17).webp',
+    image18: '/cranes/image (18).webp',
+    image19: '/cranes/image (19).webp',
+    image20: '/cranes/image (20).webp',
+    image21: '/cranes/image (21).webp',
+    image22: '/cranes/image (22).webp',
+    image23: '/cranes/image (23).webp',
+    image24: '/cranes/image (24).webp',
+    image25: '/cranes/image (25).webp',
   },
   forklifts : {
-    image1: '/forklifts/image (1).jfif',
-    image2: '/forklifts/image (2).jfif',
-    image3: '/forklifts/image (3).jfif',
-    image4: '/forklifts/image (4).jfif',
-    image5: '/forklifts/image (5).jfif',
+    image1: '/forklifts/image (1).webp',
+    image2: '/forklifts/image (2).webp',
+    image3: '/forklifts/image (3).webp',
+    image4: '/forklifts/image (4).webp',
+    image5: '/forklifts/image (5).webp',
   },
   generators : {
-    image1: '/generators/image (1).jfif',
-    image2: '/generators/image (2).jfif',
-    image3: '/generators/image (3).jfif',
-    image4: '/generators/image (4).jfif',
-    image5: '/generators/image (5).jfif',
+    image1: '/generators/image (1).webp',
+    image2: '/generators/image (2).webp',
+    image3: '/generators/image (3).webp',
+    image4: '/generators/image (4).webp',
+    image5: '/generators/image (5).webp',
   },
   transportation : {
-    image1: '/transportation/image (1).jfif',
-    image2: '/transportation/image (2).jfif',
-    image3: '/transportation/image (3).jfif',
-    image4: '/transportation/image (4).jfif',
-    image5: '/transportation/image (5).jfif',
+    image1: '/transportation/image (1).webp',
+    image2: '/transportation/image (2).webp',
+    image3: '/transportation/image (3).webp',
+    image4: '/transportation/image (4).webp',
+    image5: '/transportation/image (5).webp',
   },
  },
   // Company Logo
-  logo: '/logo.png',
+  logo: '/logo.webp',
 } as const;
 
 // Type for image paths
