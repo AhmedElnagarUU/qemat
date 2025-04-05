@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl'
 import Link from "next/link"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone,  MapPin } from "lucide-react"
 import Logo from "./logo"
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="mb-6">
               <Logo ar={"text-xs"} en={"text-xs"} />
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-300 mb-6">
               {t('description')}
             </p>
           </div>
@@ -28,19 +28,19 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">{t('quickLinks')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('home')}
                 </Link>
               </li>
             
               <li>
-                <Link href={`/${locale}/#services`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/#services`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('products')}
                 </Link>
               </li>
               {/*  */}
               <li>
-                <Link href="#contact" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('contact')}
                 </Link>
               </li>
@@ -52,27 +52,27 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">{t('ourServices')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href={`/${locale}/products/cranes`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/cranes`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('craneRental')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/products/forklifts`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/forklifts`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('forkliftRental')}
                 </Link>
               </li>
               {/* <li>
-                <Link href={`/${locale}/products/generators`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/generators`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('generatorRental')}
                 </Link>
               </li> */}
               <li>
-                <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/transportation`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('transportationServices')}
                 </Link>
               </li>
               {/* <li>
-                <Link href={`/${locale}/products/transportation`} className="text-gray-400 hover:text-yellow-500 transition-colors">
+                <Link href={`/${locale}/products/transportation`} className="text-gray-300 hover:text-yellow-400 transition-colors">
                   {t('technicalSupport')}
                 </Link>
               </li> */}
@@ -84,23 +84,23 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">{t('contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-yellow-500 mr-3 mt-1" />
-                <span className="text-gray-400">{t('address')}</span>
+                <MapPin className="h-5 w-5 text-yellow-400 mr-3 mt-1" />
+                <span className="text-gray-300">{t('address')}</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 text-yellow-500 mr-3" />
-                <span className="text-gray-400">{t('phone')}</span>
+                <Phone className="h-5 w-5 text-yellow-400 mr-3" />
+                <span className="text-gray-300">{t('phone')}</span>
               </li>
-              <li className="flex items-center">
-                <Mail className="h-5 w-5 text-yellow-500 mr-3" />
-                <span className="text-gray-400">{t('email')}</span>
-              </li>
+              {/* <li className="flex items-center">
+                <Mail className="h-5 w-5 text-yellow-400 mr-3" />
+                <span className="text-gray-300">{t('email')}</span>
+              </li> */}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-center text-gray-500">
+        <div className="border-t border-gray-700 pt-8">
+          <p className="text-center text-gray-400">
             &copy; {new Date().getFullYear()} Qemat Alrafeat for Renting Equipment Est. {t('rights')}
           </p>
         </div>
