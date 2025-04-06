@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -56,6 +57,18 @@ export default async function LocaleLayout({
 
   return (
     <html lang={params.locale} className="scroll-smooth">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4KG6SLTBS4" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4KG6SLTBS4');
+          `}
+        </Script>
+      </head>
       <body className={`${params.locale === 'ar' ? 'font-arabic' : ''} ${inter.className}`}>
         <NextIntlClientProvider locale={params.locale} messages={messages} timeZone="Asia/Riyadh">
           <div className="min-h-screen flex flex-col">
